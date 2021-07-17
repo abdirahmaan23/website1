@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOKERS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(mogadisho.jpeg);
+            background-size: cover;
+        }
+        .gooz{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: animate 20s linear infinite;
+        } 
+        @keyframes animate{
+            0% 
+            {
+                transform: perspective(1000px) rotatey(0deg);
+
+            }
+            100%{
+                transform: perspective(1000px) rotatey(360deg);
+
+            }
+        }
+        .gooz span{
+            position: absolute;
+            top: o;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--v) * 45deg)) translateZ(400px);
+            -webkit-box-reflect:below 0px linear-gradient(transparent,transparent,#0004) ;
+        }
+        .gooz span img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            
+        }
+        .gooz h1{
+            background-color: crimson;
+            color: lightcyan;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gooz">
+        <span style="--v:1;"><img src="80.jpg" alt=""></span>
+        <span style="--v:2;"><img src="81.jpg" alt=""></span>
+        <span style="--v:3;"><img src="86.jpg" alt=""></span>
+        <span style="--v:4;"><img src="87.jpg" alt=""></span>
+        <br>
+        <!-- <span style="--i:5;"><img src="97.jpg" alt=""></span> -->
+        <span style="--v:5;"><img src="99.jpg" alt=""></span>
+        <span style="--v:6;"><img src="100.jpg" alt=""></span>
+        <span style="--v:7;"><img src="101.jpg" alt=""></span>
+        <span style="--v:8;"><img src="111.jpg" alt=""></span>
+        <span style="--v:8;"><img src="112.jpg" alt=""></span>
+        <span style="--v:8;"><img src="105.jpg" alt=""></span>
+        <span style="--v:8;"><img src="109.jpg" alt=""></span>
+        <span style="--v:8;"><img src="108.jpg" alt=""></span>
+        
+        <h1>THE BEST WORLD COOKERS</h1>
+        
+        
+    </div>
+
+   
+</body>
+<Footer> <a href="index.html" class="btn">BACK IT</a></Footer>
+</html>
